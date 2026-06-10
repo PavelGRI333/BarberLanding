@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANCUT — Барбершоп премиум класса</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="logo">MANCUT</a>
+            <nav class="nav">
+                <a href="#services" class="nav__link">Услуги</a>
+                <a href="#membership" class="nav__link">Абонементы</a>
+                <a href="#contacts" class="nav__link">Контакты</a>
+            </nav>
+            <a href="#booking" class="btn btn--header">Записаться</a>
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero__bg"></div>
+            <div class="hero__overlay"></div>
+            <div class="container hero__content">
+                <p class="hero__subtitle">Стрижём мужчин, создаём стиль</p>
+                <h1 class="hero__title">Идеальная стрижка —<br>это характер</h1>
+                <p class="hero__desc">Мастера с 10-летним опытом. Премиальные материалы. Атмосфера, которая запоминается.</p>
+                <a href="#booking" class="btn btn--hero">Записаться на приём</a>
+            </div>
+            <div class="hero__scroll">
+                <span>Листай вниз</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="section-title">Услуги</h2>
+                <div class="services__grid">
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=80" alt="Мужская стрижка" loading="lazy">
+                        </div>
+                        <div class="card__body">
+                            <div class="card__icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#C9A24B" stroke-width="1.5">
+                                    <path d="M8 6L12 10M24 6L20 10M12 10L16 26M20 10L16 26M10 6H22"/>
+                                </svg>
+                            </div>
+                            <h3 class="card__title">Мужская стрижка</h3>
+                            <p class="card__desc">Классические и современные техники. Каждый сантиметр — идеален.</p>
+                            <p class="card__price">от 2 500 ₽</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80" alt="Бритьё опасной бритвой" loading="lazy">
+                        </div>
+                        <div class="card__body">
+                            <div class="card__icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#C9A24B" stroke-width="1.5">
+                                    <path d="M6 16L10 20L26 4M4 22L10 16M18 4L24 10"/>
+                                    <path d="M20 8L24 12"/>
+                                </svg>
+                            </div>
+                            <h3 class="card__title">Бритьё опасной бритвой</h3>
+                            <p class="card__desc">Ритуал, а не процедура. Горячее полотенце, пена, финальный штрих.</p>
+                            <p class="card__price">от 1 800 ₽</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&q=80" alt="Стрижка бороды" loading="lazy">
+                        </div>
+                        <div class="card__body">
+                            <div class="card__icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#C9A24B" stroke-width="1.5">
+                                    <rect x="8" y="4" width="16" height="24" rx="2"/>
+                                    <path d="M12 10H20M12 16H20M12 22H18"/>
+                                </svg>
+                            </div>
+                            <h3 class="card__title">Стрижка бороды</h3>
+                            <p class="card__desc">Формирование бороды, окантовка, уход маслом. Линия как по линейке.</p>
+                            <p class="card__price">от 1 500 ₽</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&q=80" alt="Комплексный уход" loading="lazy">
+                        </div>
+                        <div class="card__body">
+                            <div class="card__icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#C9A24B" stroke-width="1.5">
+                                    <circle cx="16" cy="16" r="10"/>
+                                    <path d="M16 10V16L20 18"/>
+                                </svg>
+                            </div>
+                            <h3 class="card__title">Комплексный уход</h3>
+                            <p class="card__desc">Стрижка + борода + массаж головы. Голова как после отпуска.</p>
+                            <p class="card__price">от 4 500 ₽</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="membership" id="membership">
+            <div class="container">
+                <h2 class="section-title">Абонементы</h2>
+                <div class="membership__grid">
+                    <article class="plan">
+                        <div class="plan__header">
+                            <h3 class="plan__name">START</h3>
+                            <p class="plan__desc">Для тех, кто пробует</p>
+                        </div>
+                        <div class="plan__price">
+                            <span class="plan__amount">3 500 ₽</span>
+                            <span class="plan__period">/ месяц</span>
+                        </div>
+                        <ul class="plan__features">
+                            <li>2 стрижки</li>
+                            <li>Бесплатный кофе</li>
+                            <li>Скидка 10% на уход</li>
+                        </ul>
+                        <a href="#booking" class="btn btn--outline">Выбрать</a>
+                    </article>
+
+                    <article class="plan plan--popular">
+                        <div class="plan__badge">Популярный</div>
+                        <div class="plan__header">
+                            <h3 class="plan__name">PRO</h3>
+                            <p class="plan__desc">Оптимальный выбор</p>
+                        </div>
+                        <div class="plan__price">
+                            <span class="plan__amount">6 000 ₽</span>
+                            <span class="plan__period">/ месяц</span>
+                        </div>
+                        <ul class="plan__features">
+                            <li>4 стрижки</li>
+                            <li>2 бритья опасной бритвой</li>
+                            <li>Уход за бородой в подарок</li>
+                            <li>Приоритетная запись</li>
+                        </ul>
+                        <a href="#booking" class="btn">Выбрать</a>
+                    </article>
+
+                    <article class="plan">
+                        <div class="plan__header">
+                            <h3 class="plan__name">ELITE</h3>
+                            <p class="plan__desc">Без компромиссов</p>
+                        </div>
+                        <div class="plan__price">
+                            <span class="plan__amount">10 000 ₽</span>
+                            <span class="plan__period">/ месяц</span>
+                        </div>
+                        <ul class="plan__features">
+                            <li>Неограниченные стрижки</li>
+                            <li>Бритьё каждую неделю</li>
+                            <li>Премиум уход</li>
+                            <li>Личный мастер</li>
+                            <li>Виски после стрижки</li>
+                        </ul>
+                        <a href="#booking" class="btn btn--outline">Выбрать</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="contacts__wrapper">
+                    <div class="contacts__info">
+                        <h2 class="section-title">Контакты</h2>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="1.5">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                                <circle cx="12" cy="9" r="2.5"/>
+                            </svg>
+                            <div>
+                                <p class="contact-item__label">Адрес</p>
+                                <p class="contact-item__value">ул. Пушкина, 15<br>Москва</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                            <div>
+                                <p class="contact-item__label">Часы работы</p>
+                                <p class="contact-item__value">Пн-Пт: 10:00 — 21:00<br>Сб-Вс: 11:00 — 20:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <div>
+                                <p class="contact-item__label">Телефон</p>
+                                <p class="contact-item__value">+7 (999) 123-45-67</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__image">
+                        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=800&q=80" alt="Интерьер барбершопа MANCUT" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" id="booking">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Готов к преображению?</h2>
+                    <p class="cta__desc">Запишись сейчас и получи скидку 15% на первый визит. Места ограничены.</p>
+                    <a href="tel:+79991234567" class="btn btn--cta">Позвонить и записаться</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__brand">
+                <span class="logo logo--footer">MANCUT</span>
+                <p class="footer__tagline">Искусство мужской стрижки</p>
+            </div>
+            <div class="footer__links">
+                <a href="#services">Услуги</a>
+                <a href="#membership">Абонементы</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+            <p class="footer__copy">© 2026 MANCUT. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
